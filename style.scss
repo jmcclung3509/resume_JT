@@ -1,0 +1,151 @@
+$lightBaseColor: rgb(234, 238, 243);
+$highlightColor: rgb(100, 255, 218);
+$darkBaseColor: #A8B2D1;
+$darkBlueColor: #112240;
+$font1: 'Space Mono', monospace;
+$font2: 'lora', sans serif;
+
+@mixin respond($breakpoint) {
+    @if($breakpoint ==medium) {
+        @media (max-width: 900px) {
+            @content
+        }
+    }
+
+    @if($breakpoint ==small) {
+        @media (max-width: 600px) {
+            @content
+        }
+    }
+}
+
+* {
+    font-family: $font2;
+    font-size: 16px;
+
+}
+
+body {
+    width: 100vw;
+    background-color: $lightBaseColor;
+    margin: 0;
+    padding: 0;
+
+
+
+    .header-wrapper {
+        background-color: $darkBlueColor;
+        padding: 40px 10px 40px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .name {
+            width: 60%;
+
+            h1 {
+                color: $lightBaseColor;
+                margin-top: 0;
+                margin-bottom: 10px;
+
+                font-size: 2rem;
+
+
+            }
+
+            h3 {
+                color: $highlightColor;
+                margin: 0 0 30px 0;
+                font-size: 1.5rem;
+
+            }
+
+            address {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+
+
+                a {
+                    text-decoration: none;
+                    color: $darkBaseColor;
+                    margin-bottom: 5px;
+
+                    width: 100%;
+                }
+            }
+
+            .social-icons {
+                .fa {
+                    color: $darkBaseColor;
+                    font-size: 1rem;
+                    padding: 10px;
+                }
+            }
+
+        }
+    }
+
+    .contact {
+
+        width: 30%;
+        text-align: left;
+        font-style: normal;
+        margin-right: 20px;
+
+
+
+        p {
+            color: $darkBaseColor;
+            margin: 0;
+            margin-bottom: 5px;
+            text-align: right;
+            // margin: 10px;
+        }
+
+
+    }
+
+    .content-wrapper {
+        // width: 90%;
+        // margin: 40px auto;
+        // padding: 0 40px;
+
+        .header-title {
+            background-color: $darkBaseColor;
+            padding: 10px 0 10px 40px;
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .wrapper {
+            padding: 20px 40px;
+
+            .header-subtitle {
+                font-weight: bolder;
+                font-size: 1.2rem;
+                color: $darkBlueColor;
+                margin: 0;
+
+            }
+
+            .degree {
+                margin: 0;
+            }
+
+            ul {
+                margin-bottom: 40px;
+            }
+
+            .server-list {
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,122 @@
+* {
+  font-family: "lora", sans serif;
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+  background-color: #eaeef3;
+  margin: 0;
+  padding: 0;
+}
+
+body .header-wrapper {
+  background-color: #112240;
+  padding: 40px 10px 40px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body .header-wrapper .name {
+  width: 60%;
+}
+
+body .header-wrapper .name h1 {
+  color: #eaeef3;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+body .header-wrapper .name h3 {
+  color: #64ffda;
+  margin: 0 0 30px 0;
+  font-size: 1.5rem;
+}
+
+body .header-wrapper .name address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body .header-wrapper .name address a {
+  text-decoration: none;
+  color: #A8B2D1;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+body .header-wrapper .name .social-icons .fa {
+  color: #A8B2D1;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+body .contact {
+  width: 30%;
+  text-align: left;
+  font-style: normal;
+  margin-right: 20px;
+}
+
+body .contact p {
+  color: #A8B2D1;
+  margin: 0;
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+body .content-wrapper .header-title {
+  background-color: #A8B2D1;
+  padding: 10px 0 10px 40px;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+body .content-wrapper .wrapper {
+  padding: 20px 40px;
+}
+
+body .content-wrapper .wrapper .header-subtitle {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  color: #112240;
+  margin: 0;
+}
+
+body .content-wrapper .wrapper .degree {
+  margin: 0;
+}
+
+body .content-wrapper .wrapper ul {
+  margin-bottom: 40px;
+}
+
+body .content-wrapper .wrapper .server-list {
+  margin-bottom: 10px;
+}
+
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */
